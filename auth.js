@@ -7,7 +7,7 @@ const cognitoExpress = new CognitoExpress({
   region: process.env.AWS_DEFAULT_REGION,
   cognitoUserPoolId: process.env.COGNITO_USER_POOL_ID,
   tokenUse: "access",
-  tokenExpiration: 600
+  tokenExpiration: 3600
 })
 
 exports.validateAuth = (req, res, next) => {
